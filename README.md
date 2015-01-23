@@ -257,10 +257,10 @@ They following types of fields are supported now:
 
 - 'string' - CharField - max_length: 128
 - 'text': TextField - max_length:  32000
-- 'integer':  IncrementableIntegerField'
-- 'float':  IncrementableFloatField'
+- 'integer':  IncrementableIntegerField
+- 'float':  IncrementableFloatField
 - 'boolean': NullBooleanField
-- 'datetime': DateTimeField'
+- 'datetime': DateTimeField
 - 'file': TextField
 - 'reference': ReferenceField
 
