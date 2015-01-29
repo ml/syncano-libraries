@@ -13,7 +13,7 @@ https://v4.hydraengine.com/
 
 From there main page, you can navigate to:
 
-- docs https://syncanotest1-env.elasticbeanstalk.com/docs/ - swagger docs
+- docs [/docs/](https://syncanotest1-env.elasticbeanstalk.com/docs/) - swagger docs
 - api https://syncanotest1-env.elasticbeanstalk.com/v1/ - where is the first version of the api
 
 ### How I register new account and obtain the proper key?
