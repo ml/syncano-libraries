@@ -13,8 +13,8 @@ https://v4.hydraengine.com/
 
 From there main page, you can navigate to:
 
-- docs /docs/ - swagger docs
-- api /v1/ - where is the first version of the api
+- docs [/docs/](https://syncanotest1-env.elasticbeanstalk.com/docs/) - swagger docs
+- api [/v1/](https://syncanotest1-env.elasticbeanstalk.com/v1/) - where is the first version of the api
 
 ### How I register new account and obtain the proper key?
 New account can be registered at:
