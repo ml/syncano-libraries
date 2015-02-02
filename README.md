@@ -85,7 +85,7 @@ We use direction 1, or 0 and last_pk.
 
 #### Changing page size
 
-Number of items by page is set with `limit` query parameter.
+Number of items by page is set with `page_size` query parameter.
 
 #### Different orderings
 
