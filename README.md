@@ -41,22 +41,21 @@ https://syncanotest1-env.elasticbeanstalk.com/docs/
 
 If you add api_key in right upper corner, you would be able to use api as authorized user.
 
-### How authorization works?
+### How authentication & authorization works?
 
 There are few options there:
 
 - add authorization header
 ```
-authorization_header = 'token %s' % api_key
-HTTP_AUTHORIZATION=authorization_header
+curl -H "AUTHORIZATION: token my-api-key" -k https://syncano-v4-d1.elasticbeanstalk.com/v1/instances/my-instance/
 ```
 - add apikey header
 ```
-HTTP_X_API_KEY=api_key
+curl -H "X-API-KEY: my-api-key" -k https://syncano-v4-d1.elasticbeanstalk.com/v1/instances/my-instance/
 ```
 - add query parameter to request
 ```
-https://syncanotest1-env.elasticbeanstalk.com/v1/instances/?api_key=my-very-secret-key
+https://syncanotest1-env.elasticbeanstalk.com/v1/instances/?api_key=my-api-key
 ```
 
 ### How paging works?
