@@ -11,7 +11,7 @@ https://syncanotest1-env.elasticbeanstalk.com/
 But it also has an dns alias to:
 https://v4.hydraengine.com/
 
-From there main page, you can navigate to:
+Use following links to see the docs, or to navigate to the first version of api:
 
 - docs [/docs/](https://syncanotest1-env.elasticbeanstalk.com/docs/) - swagger docs
 - api [/v1/](https://syncanotest1-env.elasticbeanstalk.com/v1/) - where is the first version of the api
