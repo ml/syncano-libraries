@@ -47,11 +47,11 @@ There are few options there:
 
 - add authorization header
 ```
-curl -H "AUTHORIZATION: token my-api-key" -k https://syncano-v4-d1.elasticbeanstalk.com/v1/instances/my-instance/
+curl -H "AUTHORIZATION: token my-api-key" -k https://syncanotest1-env.elasticbeanstalk.com/v1/instances/my-instance/
 ```
 - add apikey header
 ```
-curl -H "X-API-KEY: my-api-key" -k https://syncano-v4-d1.elasticbeanstalk.com/v1/instances/my-instance/
+curl -H "X-API-KEY: my-api-key" -k https://syncanotest1-env.elasticbeanstalk.com/v1/instances/my-instance/
 ```
 - add query parameter to request
 ```
