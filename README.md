@@ -235,13 +235,8 @@ To create objects, you first need to create a class.
 
 A data to create a class might look like below
 
-```
-data = {
-    'description': 'test2',
-    'name': 'test2',
-    'schema': [{'name': 'a', 'type': 'string'}]
-}
-```
+You can read more about creating class [here](http://syncano.readme.io/v4.0/docs/instancesinstanceclasses-2).
+
 
 Schema is a list of dictionaries describing fields:
 ```
