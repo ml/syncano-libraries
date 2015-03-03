@@ -13,7 +13,7 @@ https://v4.hydraengine.com/
 
 Use following links to see the docs, or to navigate to the first version of api:
 
-- docs [/docs/](https://syncanotest1-env.elasticbeanstalk.com/docs/) - swagger docs
+- readme.io [docs](http://syncano.readme.io/v4.0/docs/api-explorer-usage)
 - api [/v1/](https://syncanotest1-env.elasticbeanstalk.com/v1/) - where is the first version of the api
 
 ### How I register new account and obtain the proper key?
@@ -239,11 +239,10 @@ A data to create a class might look like below
 data = {
     'description': 'test2',
     'name': 'test2',
-    'icon': 'ikona',
-    'color': '#123123',
     'schema': [{'name': 'a', 'type': 'string'}]
 }
 ```
+
 Schema is a list of dictionaries describing fields:
 ```
 schema = [{"name": "my_value", "type": "string"}, {"name": "second_value", "type": "float"}]
