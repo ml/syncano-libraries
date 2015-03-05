@@ -16,6 +16,12 @@ Use following links to see the docs, or to navigate to the first version of api:
 - readme.io [docs](http://syncano.readme.io/v4.0/docs/api-explorer-usage)
 - api [/v1/](https://syncanotest1-env.elasticbeanstalk.com/v1/) - where is the first version of the api
 
+#### Note:
+
+Sometimes in the readme.io documentation you can see a url api.syncano.io as backend url. It's not ready yet. Use https://v4.hydraengine.com or https://syncanotest1-env.elasticbeanstalk.com/
+Those sites don't have a valid certificats (self signed), so you would probably have to ignore it for now.
+
+
 ### How I register new account and obtain the proper key?
 New account can be registered at:
 https://syncanotest1-env.elasticbeanstalk.com/v1/account/register/
@@ -229,71 +235,6 @@ API has a schema endpoint that describes every endpoint, methods and parameters 
 
 https://syncanotest1-env.elasticbeanstalk.com/v1/schema/
 
-## Creating new classes and objects
+[Creating classes](http://syncano.readme.io/v4.0/docs/classes-1).
+[Data objects management](http://syncano.readme.io/v4.0/docs/data-object-management),
 
-To create objects, you first need to create a class.
-
-A data to create a class might look like below
-
-You can read more about creating class [here](http://syncano.readme.io/v4.0/docs/instancesinstanceclasses-2).
-
-
-Schema is a list of dictionaries describing fields:
-```
-schema = [{"name": "my_value", "type": "string"}, {"name": "second_value", "type": "float"}]
-```
-Instance name is validated by regex:
-```
-'^[A-Za-z][A-Za-z0-9\-_]*$'
-```
-
-### Types of fields
-They following types of fields are supported now:
-
-- 'string' - CharField - max_length: 128
-- 'text': TextField - max_length:  32000
-- 'integer':  IncrementableIntegerField
-- 'float':  IncrementableFloatField
-- 'boolean': NullBooleanField
-- 'datetime': DateTimeField
-- 'file': TextField
-- 'reference': ReferenceField
-
-Required values for each field dictionary:
-required_keys = `{'name', 'type'}`
-
-### Indexes
-You can add indexes to most of the file types. Types without indexes are
-
-- text
-- file
-
-
-For the rest, you can add `order_index` and `filter_index`. Fields with `order_index` can be used in `order_by` query, and fields with `filter_index` can be used in filtering in objects endpoint.
-
-Example of class' schema with indexes
-```
- {
-            'name': 'test', 'description': 'test test',
-            'schema': [
-                {'name': 'string', 'type': 'string', 'order_index': True, 'filter_index': True},
-                {'name': 'text', 'type': 'text'},
-                {'name': 'integer', 'type': 'integer', 'order_index': True, 'filter_index': True},
-                {'name': 'float', 'type': 'float', 'order_index': True, 'filter_index': True},
-                {'name': 'bool', 'type': 'boolean', 'order_index': True, 'filter_index': True},
-                {'name': 'datetime', 'type': 'datetime', 'order_index': True, 'filter_index': True},
-                {'name': 'file', 'type': 'file'},
-                {'name': 'ref', 'type': 'reference', 'order_index': True, 'filter_index': True, 'target': 'self'}
-]}
-
-```
-
-### Reference field
-
-If a field in schema is of type `reference`, there has to be a specified `target`. Target can be either `self` or name of some other class.
-
-## Creating objects
-
-To create objects of given class, navigate to `objects` link of the created class. There will be endpoint with proper validation. This endpoint should look as follows:
-
-`/v1/my_instance/classes/my_class/objects`
