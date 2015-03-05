@@ -274,7 +274,7 @@ For the rest, you can add `order_index` and `filter_index`. Fields with `order_i
 Example of class' schema with indexes
 ```
  {
-            'name': 'test', 'icon': 'test', 'color': '#ffffff', 'description': 'test test',
+            'name': 'test', 'description': 'test test',
             'schema': [
                 {'name': 'string', 'type': 'string', 'order_index': True, 'filter_index': True},
                 {'name': 'text', 'type': 'text'},
