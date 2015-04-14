@@ -13,7 +13,7 @@ https://v4.hydraengine.com/
 
 Use following links to see the docs, or to navigate to the first version of api:
 
-- readme.io [docs](http://syncano.readme.io/v4.0/docs/api-explorer-usage)
+- readme.io [docs](http://docs.syncano.com/v0.1)
 - api [/v1/](https://syncanotest1-env.elasticbeanstalk.com/v1/) - where is the first version of the api
 
 #### Note:
