@@ -47,7 +47,5 @@ https://syncanotest1-env.elasticbeanstalk.com/docs/
 
 If you add api_key in right upper corner, you would be able to use api as authorized user.
 
-[General information](http://syncano.readme.io/v4.0/docs/general-information).
-[Creating classes](http://syncano.readme.io/v4.0/docs/classes-1).
-[Data objects management](http://syncano.readme.io/v4.0/docs/data-object-management),
+[API overview](http://docs.syncano.com/v0.1/docs/general-information).
 
